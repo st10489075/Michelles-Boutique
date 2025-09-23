@@ -138,6 +138,17 @@ p {
   z-index: 1;
 }
 
+/*MENU SECTION STYLE */
+.menu-section {
+  display: flex; /* put links and images in a row */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* space between the items */
+  padding: 2rem;
+  background: #fff; /* soft background */
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
 
 .gallery-item{
   position:relative;
