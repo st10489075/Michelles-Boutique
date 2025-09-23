@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/c552?family=Roboto:wght@300&display=swap');
+
+/*General Reset */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+#home-body{
+    background-color: blanchedalmond;
+}
+/* Header Styling */
+header{
+    background-color: blanchedalmond;
+    padding: 20px 0;
+    text-align: center;
+}
+
+Header h1{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Navigation Styling */
+.nav-links{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links{
+    margin: 0 15px;
+}
+
+.nav-links{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+/*Pseudo selectors */
+.nav-links a:hover{
+    background-color: #a9a9a9;
+    border-radius: 5px;
+    transform: scale(1.1); /* Zoom effect*/
+}
+
+.nav-links a:active{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    transform: scale(1.1); /* Zoom effect*/
+}
+
+/* Section Styling */
+section{
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+#image {
+    max-width: 100%;
+    
+}
+
+.gallery-item{
+  position:relative;
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+  background:linear-gradient(180deg, #fff, #faf5fb);
+  display:block;
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition: transform .5s ease;
+  will-change: transform;
+}
+.gallery-item::after{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(20,10,20,0.0), rgba(20,10,20,0.12));
+  opacity:0;transition:opacity .25s;
+}
+.gallery-item:hover img{ transform: scale(1.08) }
+.gallery-item:hover::after{ opacity:1 }
+
+/* overlay label on hover */
+.gallery-item .meta{
+  position:absolute;left:12px;bottom:12px;color:white;
+  font-weight:600;text-shadow:0 3px 10px rgba(0,0,0,0.45);
+  background:linear-gradient(90deg, rgba(0,0,0,0.1), rgba(0,0,0,0.25));
+  padding:6px 10px;border-radius:999px;font-size:0.85rem;
+  backdrop-filter: blur(4px);
+}
