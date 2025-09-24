@@ -171,40 +171,32 @@ p {
 }
 
 /*GALLERY SECTION STYLE */
-.gallery-section {
-  display: flex; /* put links and images in a row */
-  align-items: center;
-  justify-content: center;
-  gap: 2rem; /* space between the items */
-  padding: 2rem;
-  background: #fff; /* soft background */
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.nails-container {
+  display: flex;                /* Use flexbox for layout */
+    flex-wrap: wrap;              /* Allow wrapping to next line if needed */
+    justify-content: center;      /* Center align all nails cards */
+    gap: 20px;                    /* Space between each card */
+    padding: 20px;                /* Inner spacing around container */
+    background-color: #f9f9f9;    /* Light gray background */
 }
 
-
-
-/* Base look */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #fffafc;
-  color: #2c2133;
-  line-height: 1.5;
+/* Each Nails card */
+.our-nails {
+    background: #fff;                      /* White background for card look */
+    border-radius: 12px;                   /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 15px;                         /* Space inside card */
+    width: 200px;                          /* Fixed card width */
+    text-align: center;                    /* Center text and image */
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease;      /* Smooth hover animation */
 }
 
-/* Section wrapper */
-.gallery-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  text-align: center;
+/* Hover effect on nails cards */
+.our-nails:hover {
+    transform: translateY(10px);           /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
 }
-.gallery-section h2 {
-  color: #6c4a7b;
-  margin-bottom: 1rem;
-}
-
 /* Slider wrapper */
 .slider {
   position: relative;
