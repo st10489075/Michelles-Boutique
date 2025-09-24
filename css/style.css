@@ -182,6 +182,43 @@ p {
 
 /* Each Nails card */
 .our-nails {
+    background: #fff;                      /* White background for image look */
+    border-radius: 12px;                   /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 15px;                         /* Space inside image */
+    width: 200px;                          /* Fixed card width */
+    text-align: center;                    /* Center text and image */
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease;      /* Smooth hover animation */
+}
+
+/* Hover effect on nails image */
+.our-nails:hover {
+    transform: translateY(10px);           /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
+}
+
+
+/* Nails images */
+.nails-img {
+    width: 100%;                /* Fill the card width */
+    height: 200px;              /* Fixed height for consistency */
+    object-fit: cover;          /* Crop/fit image neatly */
+    border-radius: 10px;        /* Rounded image corners */
+    margin-bottom: 10px;        /* Space below image */
+}
+
+.lashes-container {
+    display: flex;                /* Use flexbox for layout */
+    flex-wrap: wrap;              /* Allow wrapping to next line if needed */
+    justify-content: center;      /* Center align all lashes image */
+    gap: 20px;                    /* Space between each card */
+    padding: 20px;                /* Inner spacing around container */
+    background-color: #f9f9f9;    /* Light gray background */
+}
+
+/* Each eyelashe image */
+.our-lashes {
     background: #fff;                      /* White background for card look */
     border-radius: 12px;                   /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
@@ -192,11 +229,23 @@ p {
                 box-shadow 0.3s ease;      /* Smooth hover animation */
 }
 
-/* Hover effect on nails cards */
-.our-nails:hover {
-    transform: translateY(10px);           /* Slight lift effect */
+/* Hover effect on nails image */
+.our-lashes:hover {
+  transform: translateY(10px);           /* Slight lift effect */
     box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
 }
+
+/* Lashes images */
+.lashes-img {
+    width: 100%;                /* Fill the image width */
+    height: 200px;              /* Fixed height for consistency */
+    object-fit: cover;          /* Crop/fit image neatly */
+    border-radius: 10px;        /* Rounded image corners */
+    margin-bottom: 10px;        /* Space below image */
+}
+
+
+
 /* Slider wrapper */
 .slider {
   position: relative;
