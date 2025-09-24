@@ -72,6 +72,24 @@ section{
     text-align: center;
 }
 
+/* Gallery Slider */
+.slider {
+  overflow: hidden;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.slider {
+  display: flex;
+  width: 400%;
+  animation: slide 12s infinite;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 #image {
     max-width: 100%;
 

@@ -27,4 +27,3 @@ Michelle's Boutique/
 ├── contact.html        (Contact Us)
 └── style.css           (Stylesheet)
 
-
