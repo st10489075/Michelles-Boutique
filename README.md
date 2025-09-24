@@ -19,3 +19,12 @@ Basic CSS Styling
 File & Folder Structure
 
 Michelle's Boutique/
+│
+├── index.html          (Home)
+├── about.html          (About Us)
+├── services.html       (Services)
+├── gallery.html        (Gallery)
+├── contact.html        (Contact Us)
+└── style.css           (Stylesheet)
+
+

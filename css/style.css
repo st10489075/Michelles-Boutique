@@ -5,7 +5,8 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto' sans-serif;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #fff;
 }
@@ -138,8 +139,8 @@ p {
   z-index: 1;
 }
 
-/*MENU SECTION STYLE */
-.menu-section {
+/*GALLERY SECTION STYLE */
+.gallery-section {
   display: flex; /* put links and images in a row */
   align-items: center;
   justify-content: center;
