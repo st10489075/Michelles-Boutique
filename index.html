@@ -7,6 +7,7 @@
     <title>Michelle's Boutique- Home</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body id="home-body">
 
@@ -21,13 +22,19 @@
             <a href="./Pages/Gallery.html">Gallery</a>
             <a href="./Pages/Contact.html">Contact us</a>
             <a href="./Pages/About.html">About Us</a>
-            
         </nav>
-         
+        <!--Add a hamburger navigation  for small devices-->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
     </header>
     <main>
         <!---The website heading and the short brief paragraph of the services-->
         <h1 style="color: rgb(144, 0, 255); text-align: center;">Welcome To Michelle's Boutique</h1>
+        <div class="responsive-text"> </div>
+
         <p style="text-transform: capitalize; font-weight: 100;">Our services
              we offers maintenances for nails, hair and eye lashes.
              Also also offers training as beautician to empower women into becoming independent. 
@@ -40,5 +47,22 @@
     <footer>
         <p style="text-align: center;">&copy;2022 Michelle's Boutique</p>
     </footer>
+
+     <div class="socials">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank"> <i class="fab fa-tiktok"></i></a>
+            </div>
+            <p id="myParagraph">&copy; 2025 BlueWave Digital Agency.</p>
+        </footer>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active'); // animate hamburger
+            });
+        </script>
 </body>
 </html>

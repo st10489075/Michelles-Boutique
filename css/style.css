@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/c552?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 /*General Reset */
@@ -89,6 +89,19 @@ section{
   width: 100%;
   border-radius: 10px;
 }
+
+/* Slider Animation */
+@keyframes slide {
+  0% {transform: translateX(0);}
+  20% {transform: translateX(0);}
+  25% { transform: translateX(-100%);}
+  45% { transform: translateX(-100%);}
+  50% { transform: translateX(-200%);}
+  70% { transform: translateX(-200%);}
+  75% { transform: translateX(-300%);}
+  95% { transform: translateX(-300%);}
+  100% { transform: translateX(0);}
+} n
 
 #image {
     max-width: 100%;
