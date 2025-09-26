@@ -20,6 +20,12 @@
             <a href="./About.html">About Us</a>
             
         </nav>
+        <!--Add a hamburger navigation  for small devices-->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </header>
         <!--The Business Gallery-->
         <!--The Nails Gallery-->
@@ -84,7 +90,15 @@
     <footer>
         <p style="text-align: center;">&copy;2022 Michelle's Boutique</p>
     </footer>
+    <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
 
+            hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active'); // animate hamburger
+            });
+        </script>
 
 </body>
 </html>

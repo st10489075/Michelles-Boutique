@@ -135,8 +135,8 @@ header{
 }
 
 /* Input fields and textarea */
-.contact-form input[type="name"],
-.contact-form input[type="contacts"],
+.contact-form input[type="text"],
+.contact-form input[type="text"],
 .contact-form input[type="datetime"],
 .contact-form textarea {
     width: 50%;                  /* Make inputs fill available space */
