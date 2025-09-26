@@ -112,26 +112,26 @@ header{
 .contact-form {
     max-width: 600px;              /* Limit form width */
     max-height: 400px;
-    margin: 40px auto;             /* Center form horizontally with top margin */
+    margin: 40px auto;             
     padding: 20px;                 /* Inner spacing */
-    background: #fff;              /* White background for card effect */
-    border-radius: 10px;           /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    background: #fff;              
+    border-radius: 10px;           
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     font-family: Arial, sans-serif; /* Clean font */
 }
 
 /* Table styling inside form */
 .contact-form table {
-    width: 100%;                  /* Full width inside the card */
-    border-collapse: collapse;    /* Remove default table spacing */
+    width: 100%;                 
+    border-collapse: collapse;    
 }
 
 /* Table cells (labels and inputs) */
 .contact-form td {
     padding: 10px 5px;            /* Space between rows and columns */
-    vertical-align: top;          /* Align text at the top */
+    vertical-align: top;       
     font-size: 14px;              /* Adjust text size */
-    color: #333;                /* Dark gray text color */
+    color: #333;                
 }
 
 /* Input fields and textarea */
@@ -140,23 +140,23 @@ header{
 .contact-form input[type="datetime"],
 .contact-form textarea {
     width: 50%;                  /* Make inputs fill available space */
-    padding: 8px;                 /* Inner spacing inside inputs */
+    padding: 8px;                 
     border: 1px solid #ccc;       /* Light border */
-    border-radius: 6px;           /* Rounded input edges */
+    border-radius: 6px;           
     font-size: 14px;             
-    box-sizing: border-box;       /* Ensures padding doesn’t affect width */
+    box-sizing: border-box;       
 }
 
 /* Submit button */
 .contact-form input[type="submit"] {
-    padding: 10px 15px;           /* Button padding */
-    background: #007bff;          /* Blue background */
-    color: white;                 /* White text */
-    border: none;                 /* Remove default border */
-    border-radius: 6px;           /* Rounded button corners */
-    font-size: 15px;              /* Slightly larger text */
-    cursor: pointer;              /* Pointer on hover */
-    transition: background 0.3s ease; /* Smooth color change */
+    padding: 10px 15px;          
+    background: #007bff;          
+    color: white;                 
+    border: none;                 
+    border-radius: 6px;           
+    font-size: 15px;              
+    cursor: pointer;              
+    transition: background 0.3s ease; 
 }
 
 /* Submit button hover effect */
@@ -181,17 +181,17 @@ header{
 .hamburger {
   display: none;                /* Hidden by default (only shown on small screens via media query) */
   flex-direction: column;       /* Stack the three spans vertically */
-  cursor: pointer;              /* Show pointer cursor on hover for interactivity */
-  z-index: 1001;                /* Keep the hamburger above the nav menu so it’s always clickable */
+  cursor: pointer;              
+  z-index: 1001;                
 }
 
 .hamburger span {
-  height: 3px;                  /* Thickness of each line */
-  width: 25px;                  /* Length of each line */
+  height: 3px;                  
+  width: 25px;                 
   background: white;            /* Line color (white matches the dark header background) */
-  margin: 4px 0;                /* Spacing between the lines */
+  margin: 4px 0;                
   border-radius: 5px;           /* Rounded edges for a smoother look */
-  transition: all 0.4s ease;    /* Smooth animation when transforming into an “X” */
+  transition: all 0.4s ease;    
 }
 
 /*Pseudo selectors */
@@ -257,22 +257,22 @@ p {
 @media (max-width: 768px) {
   .nav-links {
     display: none;              /* Hide nav links by default on small screens */
-    flex-direction: column;     /* Stack links vertically instead of horizontally */
-    background-color: #0a3d62;  /* Same background color as header for consistency */
+    flex-direction: column;     
+    background-color: #0a3d62;  
     position: absolute;         /* Position it absolutely so it can overlay below header */
-    top: 80px;                  /* Drop the menu below the header */
+    top: 80px;                  
     right: 20px;                /* Align menu to the right edge */
-    width: 200px;               /* Fixed width for the dropdown */
-    border-radius: 8px;         /* Rounded corners for modern look */
-    padding: 15px;              /* Add space inside menu around links */
+    width: 200px;               
+    border-radius: 8px;         
+    padding: 15px;               
   }
 
   .nav-links.active {
-    display: flex;              /* When active (toggled via JS), show nav as a dropdown */
+    display: flex;              
   }
 
   .hamburger {
-    display: flex;              /* Show hamburger button on screens 768px or smaller */
+    display: flex;              
   }
 }
 
@@ -289,21 +289,21 @@ p {
 /* Nails Section */
 .nails-container {
   display: flex;                /* Use flexbox for layout */
-    flex-wrap: wrap;              /* Allow wrapping to next line if needed */
-    justify-content: center;      /* Center align all nails cards */
-    gap: 20px;                    /* Space between each card */
+    flex-wrap: wrap;              
+    justify-content: center;      
+    gap: 20px;                    
     padding: 20px;                /* Inner spacing around container */
-    background-color: #f9f9f9;    /* Light gray background */
+    background-color: #f9f9f9;   
 }
 
 /* Each Nails card */
 .our-nails {
-    background: #fff;                      /* White background for image look */
+    background: #fff;                      
     border-radius: 12px;                   /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    padding: 15px;                         /* Space inside image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;                         
     width: 200px;                          /* Fixed card width */
-    text-align: center;                    /* Center text and image */
+    text-align: center;                    
     transition: transform 0.3s ease, 
                 box-shadow 0.3s ease;      /* Smooth hover animation */
 }
@@ -318,29 +318,29 @@ p {
 /* Nails images */
 .nails-img {
     width: 100%;                /* Fill the card width */
-    height: 200px;              /* Fixed height for consistency */
-    object-fit: cover;          /* Crop/fit image neatly */
-    border-radius: 10px;        /* Rounded image corners */
-    margin-bottom: 10px;        /* Space below image */
+    height: 200px;              
+    object-fit: cover;         
+    border-radius: 10px;        
+    margin-bottom: 10px;        
 }
 /*EyeLashes Section */
 .lashes-container {
     display: flex;                /* Use flexbox for layout */
-    flex-wrap: wrap;              /* Allow wrapping to next line if needed */
-    justify-content: center;      /* Center align all lashes image */
-    gap: 20px;                    /* Space between each card */
-    padding: 20px;                /* Inner spacing around container */
+    flex-wrap: wrap;              
+    justify-content: center;   
+    gap: 20px;                   
+    padding: 20px;                
     background-color: #f9f9f9;    /* Light gray background */
 }
 
 /* Each eyelashe image */
 .our-lashes {
-    background: #fff;                      /* White background for card look */
+    background: #fff;                    
     border-radius: 12px;                   /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
     padding: 15px;                         /* Space inside card */
-    width: 150px;                          /* Fixed card width */
-    text-align: center;                    /* Center text and image */
+    width: 150px;                         
+    text-align: center;                    
     transition: transform 0.3s ease, 
                 box-shadow 0.3s ease;      /* Smooth hover animation */
 }
@@ -348,16 +348,16 @@ p {
 /* Hover effect on lashes image */
 .our-lashes:hover {
   transform: translateY(10px);           /* Slight lift effect */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
 }
 
 /* Lashes images */
 .lashes-img {
-    width: 150%;                /* Fill the image width */
+    width: 150%;                
     height: 100%;
-    object-fit: cover;          /* Crop/fit image neatly */
-    border-radius: 10px;        /* Rounded image corners */
-    margin-bottom: 10px;        /* Space below image */
+    object-fit: cover;         
+    border-radius: 10px;        
+    margin-bottom: 10px;        
 }
 
 
