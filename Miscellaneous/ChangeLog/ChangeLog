@@ -55,6 +55,11 @@ Added a few pictures in the 'gallery page'
 Added a timestamp in the footer sections for all the pages for a good user experience
 Added a  realtime date stamp  in the header section of the home page
 Added a gallery lightbox  for the images in the gallery page to improve the experience if the users.
+Created an enquiry page as well as the enquiry form
+Added javascript form validation rules for the user input
+Applied a css layout on the enquiry form
+Added a feedback functionality for submission of the form
+Customized the layoutof the dynamic contentin the css file
  
 
 

@@ -30,6 +30,7 @@
     </header>
     <!--Contact Us Details-->
     <main>
+        <form  enctype="text/plain" method="post" class="contact-form" onsubmit="return validateForm()"></form>
         <h1 style="color: black;">Contact Us</h1>
         <table>
             <tr>
@@ -63,26 +64,33 @@
     </section>
     <!--The Booking Appointment Forn-->
     <section class="contact-form">
+        <form action="mailto: michellechego@gmail.com" enctype="text/plain" method="post" class="contact-form" onsubmit="return validateForm()"></form>
         <h1 style="color: blueviolet;">Booking Form</h1>
         <form action="" method="post">
             
             <table>
                 <tr>
                     <td width="100", style="color: black;">Name</td>
-                    <td><input type="text" name="name" placeholder="Enter your name" required></Input></td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter your name" required></Input></td>
                 </tr>
                 <tr>
                     <td width="100", style="color: black;">Contact</td>
-                    <td><Input type="text" name="contacts" placeholder="Enter your contacts" required></Input></td>
+                    <td><Input type="text" name="contact" id="contact" placeholder="Enter your contacts" required></Input></td>
                 </tr>
                 <tr>
                     <td width="100" , style="color: black;">Time And Date</td>
-                    <td><Input type="datetime" name="datetime" placeholder="Enter the Time and Date"></Input></td>
+                    <td><Input type="datetime" name="datetime" id="datetime" placeholder="Enter the Time and Date"></Input></td>
                 </tr>
                 <tr>
                     <td width="100", style="color: black;">Services You Want</td>
-                    <td><textarea cols="30" rows="3"></textarea></td>
+                    <td><textarea cols="30" rows="3" name="message" id="services you want"></textarea></td>
                 </tr>
+                <tr>
+                            <td width="150"></td>
+                            <td>
+                                <p class="error" id="errorMessage"></p>
+                            </td>
+                        </tr>
                 <tr>
                     <td width="100"></td>
                     <td><input type="submit" name="Button" value="Submit!"></td>
@@ -131,6 +139,36 @@
             displayTime();
             // Call the displayTime function every second to update the time 
             setInterval(displayTime, 1000); 
+
+             //Form Input validation
+            function validateForm(){
+            const name = document.getElementById('name').value.trim();
+            const contact = document.getElementById('contact').value.trim();
+            const datetime = document.getElementById('datetime').value.trim();
+            const message = document.getElementById('services you want').value.trim();
+            const errorMessage = document.getElementById('errorMessage');
+            
+            errorMessage.textContent = '';
+            //validate input fields
+            if(name === '' || contact === '' || datetime === '' || message === ''){
+                errorMessage.textContent = 'All input fields are required!!!';
+                //alert("All input fields are required!!!");
+                return false;
+            }
+
+            //validate email
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+            if(!email.match(emailPattern)){
+                errorMessage.textContent = 'Incorrect email format!!!';
+                //alert("Incorrect email format!!!");
+                return false;
+            }
+
+            alert("Your form was submitted successfully!!!");
+            return true;
+        }
+        
+
             
         </script>
     

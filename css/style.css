@@ -149,14 +149,19 @@ header{
 
 /* Submit button */
 .contact-form input[type="submit"] {
-    padding: 10px 15px;          
-    background: #007bff;          
-    color: white;                 
-    border: none;                 
-    border-radius: 6px;           
-    font-size: 15px;              
-    cursor: pointer;              
-    transition: background 0.3s ease; 
+    padding: 10px 15px;           /* Button padding */
+    background: #007bff;          /* Blue background */
+    color: white;                 /* White text */
+    border: none;                 /* Remove default border */
+    border-radius: 6px;           /* Rounded button corners */
+    font-size: 15px;              /* Slightly larger text */
+    cursor: pointer;              /* Pointer on hover */
+    transition: background 0.3s ease; /* Smooth color change */
+}
+
+.error{
+    color: red;
+    font-size: 16px;
 }
 
 /* Submit button hover effect */
