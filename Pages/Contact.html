@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michelle's Boutique">
+    <meta name="description" content="Michelle's Boutique Contact Page">
+    <meta name="keywords" content="Contact, Phone, Email, Address, Boutique, Beauty, Nails, Hair, Eyelashes">
+    
     <title>Michelle's Boutique- The Contacts</title>
      <link rel="stylesheet" href="../css/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -18,7 +22,6 @@
             <a href="./Gallery.html">Gallery</a>
             <a href="./Contact.html">Contact Us</a>
             <a href="./About.html">About Us</a>
-            <a href="./enquiry.html">Enquiry Form</a>
            
         </nav>
         <!--Add a hamburger navigation  for small devices-->
@@ -30,7 +33,6 @@
     </header>
     <!--Contact Us Details-->
     <main>
-        <form  enctype="text/plain" method="post" class="contact-form" onsubmit="return validateForm()"></form>
         <h1 style="color: black;">Contact Us</h1>
         <table>
             <tr>
@@ -64,36 +66,33 @@
     </section>
     <!--The Booking Appointment Forn-->
     <section class="contact-form">
-        <form action="mailto: michellechego@gmail.com" enctype="text/plain" method="post" class="contact-form" onsubmit="return validateForm()"></form>
-        <h1 style="color: blueviolet;">Booking Form</h1>
-        <form action="" method="post">
-            
+        <h1 style="color: blueviolet;">Contact Form</h1>
+        <form action="mailto: michellechego@gmail.com" enctype="text/plain" method="post" class="contact-form" onsubmit="return validateForm()">
             <table>
                 <tr>
-                    <td width="100", style="color: black;">Name</td>
-                    <td><input type="text" name="name" id="name" placeholder="Enter your name" required></Input></td>
+                    <td width="150">Name:</td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
                 </tr>
                 <tr>
-                    <td width="100", style="color: black;">Contact</td>
-                    <td><Input type="text" name="contact" id="contact" placeholder="Enter your contacts" required></Input></td>
+                    <td width="150">Surname:</td>
+                    <td><input type="text" name="surname" id="surname" placeholder="Enter your surname"></td>
                 </tr>
                 <tr>
-                    <td width="100" , style="color: black;">Time And Date</td>
-                    <td><Input type="datetime" name="datetime" id="datetime" placeholder="Enter the Time and Date"></Input></td>
+                    <td width="150">Email:</td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
                 </tr>
                 <tr>
-                    <td width="100", style="color: black;">Services You Want</td>
-                    <td><textarea cols="30" rows="3" name="message" id="services you want"></textarea></td>
+                    <td width="150"><label for="message">Message:</label></td>
+                    <td>
+                        <textarea cols="25" rows="5" name="message" id="message"></textarea>
+                    </td>
+
+                
                 </tr>
+                
                 <tr>
-                            <td width="150"></td>
-                            <td>
-                                <p class="error" id="errorMessage"></p>
-                            </td>
-                        </tr>
-                <tr>
-                    <td width="100"></td>
-                    <td><input type="submit" name="Button" value="Submit!"></td>
+                    <td width="150"></td>
+                    <td><input type="submit" value="Send"></td>
                 </tr>
             </table>
         </form>
@@ -139,37 +138,30 @@
             displayTime();
             // Call the displayTime function every second to update the time 
             setInterval(displayTime, 1000); 
-
-             //Form Input validation
+            
+            //Form Input validation
             function validateForm(){
             const name = document.getElementById('name').value.trim();
-            const contact = document.getElementById('contact').value.trim();
-            const datetime = document.getElementById('datetime').value.trim();
-            const message = document.getElementById('services you want').value.trim();
-            const errorMessage = document.getElementById('errorMessage');
+            const contact = document.getElementById('surname').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
             
-            errorMessage.textContent = '';
             //validate input fields
-            if(name === '' || contact === '' || datetime === '' || message === ''){
-                errorMessage.textContent = 'All input fields are required!!!';
-                //alert("All input fields are required!!!");
+            if(name === '' || email === '' || surname === '' || message === ''){
+                alert('All input fields are required!')
                 return false;
             }
 
             //validate email
             const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
             if(!email.match(emailPattern)){
-                errorMessage.textContent = 'Incorrect email format!!!';
-                //alert("Incorrect email format!!!");
+                alert('Incorrect email format!');
                 return false;
             }
 
-            alert("Your form was submitted successfully!!!");
+            alert("Your details were submitted successfully!");
             return true;
         }
-        
-
-            
         </script>
     
 </body>

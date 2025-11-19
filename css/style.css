@@ -371,6 +371,26 @@ p {
       width: 60%;
 }
 
+/*Styling the accordins*/
+.accordion {
+      background-color: #CBCBE3;
+      cursor: pointer;
+      padding: 14px;
+      border: none;
+      width: 100%;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+    .accordion:hover {
+      background-color: #ccc;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+}
+
 /*Styling the enquiry form*/
 .form-container {
       background-color: #CBCBE3;
