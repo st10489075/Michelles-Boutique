@@ -309,14 +309,14 @@ p {
 }
 
 /* Hover effect on nails image */
-.our-nails:hover {
+.our-nails:hover{
     transform: translateY(10px);           /* Slight lift effect */
     box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
 }
 
 
 /* Nails images */
-.nails-img {
+.gallery-img {
     width: 100%;                /* Fill the card width */
     height: 200px;              
     object-fit: cover;         
@@ -327,19 +327,19 @@ p {
 .lashes-container {
     display: flex;                /* Use flexbox for layout */
     flex-wrap: wrap;              
-    justify-content: center;   
-    gap: 20px;                   
-    padding: 20px;                
-    background-color: #f9f9f9;    /* Light gray background */
+    justify-content: center;      
+    gap: 20px;                    
+    padding: 20px;                /* Inner spacing around container */
+    background-color: #f9f9f9;
 }
 
 /* Each eyelashe image */
 .our-lashes {
-    background: #fff;                    
+    background: #fff;                      
     border-radius: 12px;                   /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    padding: 15px;                         /* Space inside card */
-    width: 200px;                         
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;                         
+    width: 200px;                          /* Fixed card width */
     text-align: center;                    
     transition: transform 0.3s ease, 
                 box-shadow 0.3s ease;      /* Smooth hover animation */
@@ -348,22 +348,11 @@ p {
 /* Hover effect on lashes image */
 .our-lashes:hover {
   transform: translateY(10px);           /* Slight lift effect */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Stronger shadow on hover */
 }
 
-/* Lashes images */
-.lashes-img {
-    width: 100%;                
-    height: 200%;
-    object-fit: cover;         
-    border-radius: 10px;        
-    margin-bottom: 10px;        
-}
 
 /*Styling the Image LightBox*/
-.staff-img {
-      width: 100px; cursor: pointer; margin: 10px;
-    }
     #lightbox {
       display: none;
       position: fixed;
@@ -376,17 +365,6 @@ p {
     #lightbox img {
       width: 60%;
 }
-    #lightbox:target {
-      display: flex;
-}
-/* End of LightBox Styling */
-.timestamp{
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: medium;
-    text-align: center;
-}
-
 
 
 
