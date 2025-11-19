@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Michelle's Boutique">
     <meta name="description" content="Michelle's Boutique Services Page">
-    <meta name="keywords" content="Beauty, Nails, Hair, Eyelashes, Boutique, Manicure, Pedicure, Spa, Training">
-
+    <meta name="keywords" content="Beauty, Nails, Hair, Eyelashes, Boutique, Manicure, Pedicure, Spa, Training, Services">
+    
     <title>Michelle’s Boutique- Services</title>
      <link rel="stylesheet" href="../css/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -33,8 +33,9 @@
         </header>
      <!--The Business Services-->
      <section class="content">
-        <h1 style="color: blueviolet;">Our Services</h1>
-        <ul class="services">
+        <button class="accordion" style="color: blueviolet;">Our Services</button>
+        <div class="panel">
+            <p>
             Nails Art and Manicure <br>
             Pedicure and Spa <br>
             Eyelash Extensions <br>
@@ -42,62 +43,70 @@
             House calls <br>
             Beauty Training <br>
             
-        </ul>
+            </p>
+        </div>
+        
         </section> 
 
     <!--Nails Services-->
-    <h1 style="color: blueviolet; text-align: center;">Nails</h1>
-    <button>Manicure</button>
-    <div class="panel"></div>
-    <p>1.Classic Manicure
-         <br>
-        2.Medium Manicure
-        <br>
-        3.Long Manicure
-        <br>
-    </p>
-    <button class="accordion">Nails Services</button>
-    <div class="panel"></div>
-    <p>1.Acrylic full Set/Refills 
-        <br>
-        2.Gel Extensions
-        <br>
-        3.Nail Art and Custom Designs
-        <br>
-        4.Soak-off
-        <br>
-        5.Customised Press-on
-    </p>
+    <button class="accordion" style="color: blueviolet; text-align: center;">Nails</button>
+    <div class="panel">
+        <p>Manicure</p>
+        <p>1.Classic Manicure
+            <br>
+            2.Medium Manicure
+            <br>
+            3.Long Manicure
+            <br>
+        </p>
+        <p>Nails Services</p>
+        <p>1.Acrylic full Set/Refills 
+            <br>
+            2.Gel Extensions
+            <br>
+            3.Nail Art and Custom Designs
+            <br>
+            4.Soak-off
+            <br>
+            5.Customised Press-on
+        </p>
     <br>
+    </div>
+    
     <!--The Eyelashes Services-->
-    <h1 style="color: blueviolet; text-align: center;">Eye Lashes</h1>
-
-    <button class="accordion">Lash Extensions</button>
-    <div class="panel"></div>
-    <p>1.Classic Set - Natural and elegent look
-        <br>
-        2.Hybrid Set- Blend of classic and volume
-        <br>
-        3.Volume Set- Bold,full and dramatic
-    </p>
-
-    <button class="accordion">Lash Maintenance</button>
-    <div class="panel"></div>
-    <p>1.Lash Refills(2-3 weeks)
-    </p>
-    <h1 style="color: darkviolet;">Our Prices</h1>
-    <p>Nails from R120
+    <button class="accordion" style="color: blueviolet; text-align: center;">Eye Lashes</button>
+    <div class="panel">
+        <p>Lash Extensions</p>
+        <p>1.Classic Set - Natural and elegent look
+            <br>
+            2.Hybrid Set- Blend of classic and volume
+            <br>
+            3.Volume Set- Bold,full and dramatic
+        </p>
+        <p>Lash Maintenance</p>
+        <p>1.Lash Refills(2-3 weeks)
+        </p>
+    </div>
+    
+    <button class="accordion" style="color: darkviolet;">Our Prices</button>
+    <div class="panel">
+        <p>Nails from R120
         <br>
         Lashes from R100
-    </p>
+        </p>
+    </div>
+    
     <!--The Business Specilizations-->
-    <h1 style="color: darkorchid;">WHY CHOOSE US</h1>
-    <p>1.Professional and Certified Technicians
+    <button class="accordion" style="color: darkorchid;">WHY CHOOSE US</button>
+    <div class="panel">
+        <p>1.Professional and Certified Technicians
         <br>
         2.High-Quality Products
         <br>
         3.Relaxing,Boutique Experience
-    </p>
+        </p>
+    </div>
+    
     <!--The Footer-->
      <!-- social icons-->
      <div class="socials", style="text-align: center;">
@@ -138,7 +147,7 @@
             // Call the function to display time when the page loads
             displayTime();
 
-            //Adding accordion buttons
+            //Inserting accordions
             const acc = document.querySelectorAll(".accordion");
             acc.forEach(button => {
                 button.addEventListener("click", () => {
@@ -147,6 +156,6 @@
                 });
             });
         </script>
-    
+        
 </body>
 </html>

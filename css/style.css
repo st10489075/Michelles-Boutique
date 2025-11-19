@@ -382,7 +382,7 @@ p {
       transition: background-color 0.3s;
     }
     .accordion:hover {
-      background-color: #ccc;
+      background-color: gray;
     }
     .panel {
       padding: 0 18px;

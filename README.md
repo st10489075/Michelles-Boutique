@@ -100,6 +100,7 @@ Dependencies
 
     Google Fonts
     – for typography
+    
 
 Usage Instructions
 
