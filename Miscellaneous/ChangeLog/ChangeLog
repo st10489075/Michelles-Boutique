@@ -61,8 +61,11 @@ Applied a css layout on the enquiry form
 Added a feedback functionality for submission of the form
 Customized the layoutof the dynamic contentin the css file
 Implemented javascript interactive accordion buttons on the "service" page for the (Our services, Nails section, nails services,Eye lashes section, lashes services,Maintenance and why choose us) content.
- 
+Implemented a google interactive map in the 'contact page'
+Added a feedback alert box for the submission of the form
+Inserted the email recipient processing functionality for the contact form
 
+ 
 
 REFERENCES
     W3Schools. (2025, September 12). W3Schools. Retrieved from W3Schools: https://www.w3schools.com/cssref/pr_class_cursor.php
