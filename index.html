@@ -30,6 +30,7 @@
             </div>
     </header>
     <main>
+        <div id="datestamp"></div>
         <!---The website heading and the short brief paragraph of the services-->
         <h1 style="color: rgb(144, 0, 255); text-align: center;">Welcome To Michelle's Boutique</h1>
         <div class="responsive-text"> </div>
@@ -84,6 +85,18 @@
 
             // Display the time immediately when the page loads
             displayTime();
+
+            //Inserting DateStamp (Dynamic content)
+
+                function displayDate() {
+                const today = new Date();
+
+                const dateStr = today.toDateString(); // Format the date as a readable string
+
+                document.getElementById("datestamp").innerHTML = `Today's Date: ${dateStr}`;
+            }
+
+                displayDate();
         </script>
 </body>
 </html>

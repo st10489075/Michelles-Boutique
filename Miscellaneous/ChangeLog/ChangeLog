@@ -21,7 +21,7 @@ v1.1.0 – Latest Update (2025-09-26)
 
 
 
-##Changelog
+## Changelog
 v1.0.0 – Initial Release (2025-08-27)
 
     Added homepage (index.html)
@@ -46,7 +46,16 @@ SEE WEBSITE RESPOSIVE DESIGN SNIPPETS:
 ![alt text](<../../asserts/website on a desktop.png>)
 ![alt text](<../../asserts/image on the small screen.png>)
 ![alt text](<../../asserts/image for small screen.png>)
-    
+
+## Improvements based on part 2 feedback
+No improvements were recommended
+
+## Part 3 Changelog
+Added a few pictures in the 'gallery page'
+Added a timestamp in the footer sections for all the pages for a good user experience
+Added a  realtime date stamp  in the header section of the home page
+
+ 
 
 
 REFERENCES
