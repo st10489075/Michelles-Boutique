@@ -54,12 +54,25 @@
      <div class="our-nails">
     <img src="../Asserts/img nail.jpeg" alt="The nails" width="450"  class="nails-img"></div>
      <div class="our-nails">
+    <img src="../asserts/Butter yellow.jpeg" alt="The nails" width="450"  class="nails-img"></div>
+     <div class="our-nails">
+    <img src="../asserts/Gliter frenches.jpeg" alt="The nails" width="450"  class="nails-img"></div>
+     <div class="our-nails">
+    <img src="../asserts/Gold and brown.jpeg" alt="The nails" width="450"  class="nails-img"></div>
+     <div class="our-nails">
+    <img src="../asserts/red flowers.jpeg" alt="The nails" width="450"  class="nails-img"></div>
+     <div class="our-nails">
+    <img src="../asserts/Silver chrome.jpeg" alt="The nails" width="450"  class="nails-img"></div>
+     <div class="our-nails">
+    <img src="../asserts/Yellow chrome.jpeg" alt="The nails" width="450"  class="nails-img"></div>
+     <div class="our-nails">
     <img src="../Asserts/nailsdesign.jpeg" alt="The nails" width="450"  class="nails-img"></div>
     </div>
+
     
     <!--The Eyelashes Gallery-->
     <h1 style="color: blueviolet; text-align: center;">Our Eyelashes</h1>
-    <div class="lashes-container">
+    <div class="lashes-images">
     <div class="our-lashes">
     <img src="../Asserts/Eyelashes.jpeg" alt=" The lashes" class="lashes-img"></div>
     <div class="our-lashes">   
@@ -69,6 +82,14 @@
     <div class="our-lashes">
     <img src="../Asserts/claasic.jpeg" alt="The lashes" class="lashes-img"></div>
     <div class="our-lashes">
+    <img src="../asserts/closed eyes.jpeg" alt="The lashes" class="lashes-img"></div>
+    <div class="our-lashes">
+    <img src="../asserts/color highlight lashes.jpeg" alt="The lashes" class="lashes-img"></div>
+    <div class="our-lashes">
+    <img src="../asserts/new set.jpeg" alt="The lashes" class="lashes-img"></div>
+    <div class="our-lashes">
+    <img src="../asserts/siteview lashes.jpeg" alt="The lashes" class="lashes-img"></div>
+    <div class="our-lashes">
     <img src="../Asserts/hybrit.jpeg" alt="The lashes" class="lashes-img"></div>
     <div class="our-lashes">
     <img src="../Asserts/natural.jpeg" alt="The lashes" class="lashes-img"></div>
@@ -77,6 +98,7 @@
     <div class="our-lashes">
     <img src="../asserts/fox set.jpeg" alt="The lashes" class="lashes-img"></div>
     </div>
+    
 
 
     <!--The Footer-->
@@ -90,6 +112,7 @@
         
     <footer>
         <p style="text-align: center;">&copy;2022 Michelle's Boutique</p>
+        <p style="text-align: center;" id="time"></p>
     </footer>
     <script>
             const hamburger = document.querySelector('.hamburger');
@@ -99,6 +122,25 @@
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active'); // animate hamburger
             });
+             
+                //Inserting TimeStamp (Dynamic content)
+            function displayTime() {
+                const now = new Date();
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                let seconds = now.getSeconds();
+                // Add leading zeroes for single-digit minutes and seconds
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                const currentTime = hours + ":" + minutes + ":" + seconds;
+                document.getElementById("time").textContent = currentTime;
+            }
+            // Call the function to display time when the page loads
+            displayTime();
+            // Call the displayTime function every second to update the time   
+            setInterval(displayTime, 1000);
+
         </script>
 
 </body>

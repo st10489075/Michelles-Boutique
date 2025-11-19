@@ -36,7 +36,7 @@
         
         <p style="text-transform: capitalize; font-weight: 100;">Our services
              we offers maintenances for nails, hair and eye lashes.
-             Also also offers training as beautician to empower women into becoming independent. 
+             Also offers training beautician to empower women into becoming independent. 
             </p>
     
     </main>
@@ -50,6 +50,8 @@
         
          <footer>
         <p style="text-align: center;" id="myParagraph">&copy;2022 Michelle's Boutique.</p>
+        <p style="text-align: center;" id="time"></p>
+
        
     </footer>
 
@@ -61,6 +63,27 @@
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('active'); // animate hamburger
             });
+             //Inserting TimeStamp (Dynamic content)
+            function displayTime() {
+                const now = new Date();
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                let seconds = now.getSeconds();
+
+                // Add leading zeroes for single-digit minutes and seconds
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                const currentTime = hours + ":" + minutes + ":" + seconds;
+                document.getElementById("time").textContent = currentTime;
+            }
+
+            // Call the displayTime function every second to update the time
+            setInterval(displayTime, 1000);
+
+            // Display the time immediately when the page loads
+            displayTime();
         </script>
 </body>
 </html>
