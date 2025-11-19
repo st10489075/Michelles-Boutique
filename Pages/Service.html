@@ -18,6 +18,7 @@
             <a href="./Gallery.html">Gallery</a>
             <a href="./Contact.html">Contact Us</a>
             <a href="./About.html">About Us</a>
+            <a href="./enquiry.html">Enquiry Form</a>
         </nav>
         <!--Add a hamburger navigation  for small devices-->
             <div class="hamburger">
@@ -126,6 +127,15 @@
             setInterval(displayTime, 1000); // Update time every second
             // Call the function to display time when the page loads
             displayTime();
+
+            //Adding accordion buttons
+            const acc = document.querySelectorAll(".accordion");
+            acc.forEach(button => {
+                button.addEventListener("click", () => {
+                const panel = button.nextElementSibling;
+                panel.style.display = panel.style.display === "block" ? "none" : "block";
+                });
+            });
         </script>
     
 </body>

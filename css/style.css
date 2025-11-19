@@ -366,6 +366,87 @@ p {
       width: 60%;
 }
 
+/*Styling the enquiry form*/
+.form-container {
+      background-color: #CBCBE3;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .enquiry-type {
+      margin-top: 10px;
+    }
+
+    .enquiry-type label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color:blueviolet ;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      margin-top: 15px;
+      color: green;
+      font-weight: bold;
+    }
+    
+
 
 
 

@@ -29,9 +29,136 @@
     </header>
     <!--The Enquiry Form-->
     <main>
-        <h1 style="color: black;">Enquiry Form</h1>
-        <form action="mailto:
+        <h1 style="color: blueviolet;">Get In Touch</h1>
+         <table>
+            <tr>
+                <td width = "100">Phone Number</td>
+                <td>+27 15 297 7932</td>
+            </tr>
+            <tr>
+                <td width = "100">Address:</td>
+                <td>54 Church Street &nbsp;Polokwane &nbsp;0699</td>
+            </tr>
+            <tr>
+                <td width = "100">Email Address</td>
+                <td><a href="mailto: info@michelle22boutique.co.za">Email Us</a></td>
+            </tr>
+    </table>
+        </form>
+        <section>
+            <br/><br/>
+            
+            <div class="form-container">
+                <h2>Enquiry Form</h2>
+
+                <form id="enquiryForm">
+                <label>Enquiry Type:</label>
+                <div class="enquiry-type">
+                    <label><input type="radio" name="type" value="Volunteering" > Volunteering</label>
+                    <label><input type="radio" name="type" value="Sponsorship"> Sponsorship</label>
+                    <label><input type="radio" name="type" value="Products"> Products</label>
+                    <label><input type="radio" name="type" value="Services"> Services</label>
+                </div>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" >
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" >
+
+                <label for="message">Your Services:</label>
+                <textarea id="services" name="services" placeholder="Enter the services that you need..." ></textarea>
+
+                <div class="button-container">
+                    <button type="submit">Send Enquiry</button>
+                </div>
+                </form>
+
+                <div class="success-message" id="successMessage">
+                ✅ Thank you! Your enquiry has been submitted.
+                </div>
+            </div>
+            </section>
+            <br/><br/>
+        </main>
+        <footer>
+            <p>This website (www.MichellesBoutique.com) is copyright protected by the laws of South Africa and the rest of the African Countries represented on this website and by International Treaties. 
+                No part of this website (www.MichellesBoutique.com) may be saved or stored, reproduced, 
+                used or transmitted in any form or by any electronic or mechanical means, 
+                including, but not limited to storage thereof by e-mail or any other means, 
+                and the use thereof on any other website and/or any other media form, 
+                without the written and express permission of MichellesBoutique.
+
+            </p>
+            <div class="socials", style="text-align: center;">
         
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com" target="_blank"> <i class="fab fa-tiktok"></i></a>
+            </div>
+            
+            <p style="text-align: center;">&copy;2022 Michelle's Boutique</p>
+             <p style="text-align: center;" id="time"></p>
+        </footer>
+        <script>
+            //Activate Hamburger Navigation
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active'); // animate hamburger
+            });
+
+            //Form Input validation
+            const form = document.getElementById('enquiryForm');
+            const successMsg = document.getElementById('successMessage');
+
+            form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual submission
+
+            // Simple form validation
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const message = form.services.value.trim();
+            const type = form.querySelector('input[name="type"]:checked');
+
+            if (!type) {
+                alert("Please select an enquiry type.");
+                return;
+            }
+            if (!name || !email || !services) {
+                alert("Please fill in all required fields.");
+                return;
+            }
+
+            // Show success message and clear form
+            successMsg.style.display = 'block';
+            form.reset();
+            });
+
+            //Inserting TimeStamp (Dynamic content)
+            function displayTime() {
+                const now = new Date();
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                let seconds = now.getSeconds();
+
+                // Add leading zeroes for single-digit minutes and seconds
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                const currentTime = hours + ":" + minutes + ":" + seconds;
+                document.getElementById("time").textContent = currentTime;
+            }
+
+            // Call the displayTime function every second to update the time
+            setInterval(displayTime, 1000);
+
+            // Display the time immediately when the page loads
+            displayTime();
+        </script>
     
 </body>
 </html>
